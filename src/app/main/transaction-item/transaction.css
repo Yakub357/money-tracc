@@ -1,0 +1,95 @@
+.transaction {
+  height: 5.8rem;
+  border-bottom: 2px solid #d9d9d9;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: start; */
+
+  padding: 1.8rem 2.4rem;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.transaction:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.transaction--date {
+  color: #aab2bc;
+  margin-right: 1.8rem;
+}
+
+.transaction--wallet {
+  color: #323232;
+  margin-right: 0.8rem;
+}
+
+.transaction--img {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  background-size: 2.2rem 2.2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-right: 0.6rem;
+}
+
+.transaction.expense .transaction--img {
+  background-image: url("./right-arrow-red.svg");
+}
+
+.transaction.income .transaction--img {
+  background-image: url("./left-arrow-green.svg");
+}
+
+.transaction.transfer .transaction--img {
+  background-image: url("./right-arrow-grey.svg");
+}
+
+.transaction--tag {
+  border: 1px solid #323232;
+  border-radius: 2px;
+  padding: 0 1.2rem;
+  background-color: #d9d9d9;
+  margin-right: 1.2rem;
+}
+
+.transaction--note {
+  color: #aab2bc;
+  margin-right: auto;
+}
+
+.transaction--amount {
+  margin-right: 0.8rem;
+}
+
+.transaction.expense .transaction--amount {
+  color: #cf0a0a;
+}
+.transaction.income .transaction--amount {
+  color: #84cc16;
+}
+.transaction.transfer .transaction--amount {
+  color: #aab2bc;
+}
+
+.transaction button {
+  background-image: url("./edit-btn.svg");
+  background-size: 2.2rem 2.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  cursor: pointer;
+}
