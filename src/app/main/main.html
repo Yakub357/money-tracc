@@ -11,8 +11,8 @@
   </form>
   <h2 class="heading--two">All Transactions</h2>
   <ul class="transactions--list">
-    <li class="transaction--item">
-      <app-transaction-item></app-transaction-item>
+    <li class="transaction--item" *ngFor="let transaction of transactions">
+      <app-transaction-item [transaction]="transaction"></app-transaction-item>
     </li>
   </ul>
 </div>
