@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./transaction.css'],
 })
 export class TransactionItemComponent {
-  @Input() transaction: {
+  @Input('srvTransaction') transaction: {
     date: string;
     designation: string;
     type: string;

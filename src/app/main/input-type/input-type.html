@@ -4,18 +4,25 @@
     type="radio"
     name="transaction-type"
     value="expense"
-    checked
+    [checked]="transactionType == 'expense' ? true : false"
   />
   <label for="expense">Expense</label>
 
   <input
-    id="transaction"
+    id="transfer"
     type="radio"
     name="transaction-type"
-    value="transaction"
+    value="transfer"
+    [checked]="transactionType == 'transfer' ? true : false"
   />
   <label for="transaction">Transaction</label>
 
-  <input id="income" type="radio" name="transaction-type" value="income" />
+  <input
+    id="income"
+    type="radio"
+    name="transaction-type"
+    value="income"
+    [checked]="transactionType == 'income' ? true : false"
+  />
   <label for="income">Income</label>
 </div>

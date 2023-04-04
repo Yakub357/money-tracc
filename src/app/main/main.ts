@@ -36,5 +36,20 @@ export class MainComponent {
       800,
       'USD'
     ),
+    new TransactionModel(
+      '2 April',
+      'Wallet Alice',
+      'expense',
+      'H Bar',
+      'Humo card',
+      200,
+      'CNY'
+    ),
   ];
+
+  mainTransactionType: string = '';
+
+  onSubmit(eventData: any) {
+    console.log(eventData);
+  }
 }
