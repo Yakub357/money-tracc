@@ -1,14 +1,6 @@
 <div class="main">
   <h2 class="heading--two">New Transaction</h2>
-  <form class="inputs">
-    <app-input-type class="inputs--type"></app-input-type>
-    <app-input-designation class="inputs--wallet"></app-input-designation>
-    <app-input-amount class="inputs--amount"></app-input-amount>
-    <app-input-tag class="inputs--tag"></app-input-tag>
-    <app-input-date class="inputs--date"></app-input-date>
-    <app-input-note class="inputs--note"></app-input-note>
-    <input type="submit" value="Add Transaction" class="inputs--submit" />
-  </form>
+  <app-form class="inputs--form"></app-form>
   <h2 class="heading--two">All Transactions</h2>
   <ul class="transactions--list">
     <li class="transaction--item" *ngFor="let transaction of transactions">
