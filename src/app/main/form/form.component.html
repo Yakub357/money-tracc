@@ -1,0 +1,62 @@
+<form action="submit">
+  <div class="input--type">
+    <input id="expense" type="radio" name="transaction-type" value="expense" />
+    <label for="expense">Expense</label>
+
+    <input
+      id="transfer"
+      type="radio"
+      name="transaction-type"
+      value="transfer"
+    />
+    <label for="transaction">Transaction</label>
+
+    <input id="income" type="radio" name="transaction-type" value="income" />
+    <label for="income">Income</label>
+  </div>
+
+  <div class="input--designation">
+    <h2>From</h2>
+    <select name="designation" id="designation">
+      <option value="alice-wallet" selected>Alice Wallet</option>
+      <option value="bob-wallet">Bob Wallet</option>
+      <option value="car">Car</option>
+      <option value="mortgage">Alice Wallet</option>
+    </select>
+  </div>
+
+  <div class="input--amount">
+    <input type="text" />
+    <select name="currency" id="currency">
+      <option value="dollar" selected>USD</option>
+      <option value="euro">EUR</option>
+    </select>
+  </div>
+
+  <div class="input--tag">
+    <h2>Tag</h2>
+    <select name="tag" id="tag">
+      <option value="" disabled selected>
+        Chose existing tag or create new ones
+      </option>
+      <option value="groceries">Groceries</option>
+      <option value="restaurant">Restaurant</option>
+      <option value="rent">rent</option>
+      <option value="income-tax">Income Tax</option>
+      <option value="utilities">Utilities</option>
+      <option value="social-security">Social Security</option>
+      <option value="food">Food</option>
+      <option value="shopping">Shopping</option>
+      <option value="clothes">Clothes</option>
+    </select>
+  </div>
+
+  <div class="input--date">
+    <input type="date" name="input-date" id="input-date" value="2023-03-30" />
+  </div>
+
+  <div class="input--note">
+    <input type="text" placeholder="Note" />
+  </div>
+  <input type="submit" value="Add Transaction" class="input--submit" />
+</form>
